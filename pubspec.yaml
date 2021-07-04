@@ -1,7 +1,8 @@
 name: africas_talking
 description: This package wraps Airtime, Sms, and Voice call from Africa's Talking APIs.
 version: 0.0.1
-# homepage: https://www.example.com
+homepage: https://github.com/EddieKamau/africas_talking-dart
+repository: https://github.com/EddieKamau/africas_talking-dart
 environment:
   sdk: '>=2.12.0 <3.0.0'
 
