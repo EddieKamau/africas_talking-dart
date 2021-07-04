@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the send method from the Sms class, for the Dart programming language.">
+  <title>send method - Sms class - africas_talking library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../static-assets/github.css">
+  <link rel="stylesheet" href="../../static-assets/styles.css">
+  <link rel="icon" href="../../static-assets/favicon.png">
+
+  
+</head>
+
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">africas_talking</a></li>
+    <li><a href="../../africas_talking/africas_talking-library.html">africas_talking</a></li>
+    <li><a href="../../africas_talking/Sms-class.html">Sms</a></li>
+    <li class="self-crumb">send method</li>
+  </ol>
+  <div class="self-name">send</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">africas_talking</a></li>
+  <li><a href="../../africas_talking/africas_talking-library.html">africas_talking</a></li>
+  <li><a href="../../africas_talking/Sms-class.html">Sms</a></li>
+  <li class="self-crumb">send method</li>
+</ol>
+
+
+    <h5>Sms class</h5>
+    <ol>
+
+
+
+    <li class="section-title">
+      <a href="../../africas_talking/Sms-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="../../africas_talking/Sms/africasTalking.html">africasTalking</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.1/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.1/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li><a href="../../africas_talking/Sms/shortCode.html">shortCode</a></li>
+
+    <li class="section-title"><a href="../../africas_talking/Sms-class.html#instance-methods">Methods</a></li>
+    <li><a href="../../africas_talking/Sms/createSubscription.html">createSubscription</a></li>
+    <li><a href="../../africas_talking/Sms/deleteSubscription.html">deleteSubscription</a></li>
+    <li><a href="../../africas_talking/Sms/fetchMessages.html">fetchMessages</a></li>
+    <li><a href="../../africas_talking/Sms/fetchSubscriptions.html">fetchSubscriptions</a></li>
+    <li><a href="../../africas_talking/Sms/generateCheckoutToken.html">generateCheckoutToken</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.1/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../../africas_talking/Sms/send.html">send</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.1/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../../africas_talking/Sms-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.dart.dev/stable/2.13.1/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">send</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.dart.dev/stable/2.13.1/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/http/0.13.3/http/Response-class.html">Response</a></span>&gt;</span></span>
+<span class="name ">send</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="send-param-message">{<span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.1/dart-core/String-class.html">String</a></span> <span class="parameter-name">message</span>, </span></li>
+<li><span class="parameter" id="send-param-to"><span>required</span> <span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.1/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.dart.dev/stable/2.13.1/dart-core/String-class.html">String</a></span>&gt;</span></span> <span class="parameter-name">to</span>, </span></li>
+<li><span class="parameter" id="send-param-from"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.1/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">from</span>, </span></li>
+<li><span class="parameter" id="send-param-bulkSMSMode"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.1/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">bulkSMSMode</span>, </span></li>
+<li><span class="parameter" id="send-param-enqueue"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.1/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">enqueue</span>, </span></li>
+<li><span class="parameter" id="send-param-keyword"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.1/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">keyword</span>, </span></li>
+<li><span class="parameter" id="send-param-linkId"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.1/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">linkId</span>, </span></li>
+<li><span class="parameter" id="send-param-retryDurationInHours"><span class="type-annotation"><a href="https://api.dart.dev/stable/2.13.1/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">retryDurationInHours</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <h3 id="sends-message">Sends message</h3>
+<p>Requires;
+<code>message</code> (message to be send)
+<code>to</code> (a list of recipient's phone numbers)</p>
+<p>when <code>from</code> is provided, it will override <a href="../../africas_talking/Sms/shortCode.html">shortCode</a></p>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Future&lt;http.Response&gt; send({
+  required String message,
+  required List&lt;String&gt;to,
+  String? from,
+
+  &#47;&#47; optionals
+  int? bulkSMSMode, int? enqueue, String? keyword, String? linkId, int? retryDurationInHours
+})async{
+  return await africasTalking.httpPostProcess(
+    africasTalking.isLive ? smsLiveUrl : smsTestUrl,
+    {
+      &#39;from&#39;: (from ?? shortCode).toString(),
+      &#39;to&#39;: to.join(&#39;,&#39;),
+      &#39;message&#39;: message,
+      if(bulkSMSMode != null) ...{&#39;bulkSMSMode&#39;: bulkSMSMode},
+      if(enqueue != null) ...{&#39;enqueue&#39;: enqueue},
+      if(keyword != null) ...{&#39;keyword&#39;: keyword},
+      if(linkId != null) ...{&#39;linkId&#39;: linkId},
+      if(retryDurationInHours != null) ...{&#39;retryDurationInHours&#39;: retryDurationInHours},
+    }
+  );
+
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    africas_talking
+      0.0.1
+  </span>
+
+  
+</footer>
+
+
+<script src="../../static-assets/highlight.pack.js"></script>
+<script src="../../static-assets/script.js"></script>
+
+
+
+</body>
+
+</html>
+

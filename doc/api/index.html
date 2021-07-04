@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 0.42.0">
+  <meta name="description" content="africas_talking API docs, for the Dart programming language.">
+  <title>africas_talking - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  
+</head>
+
+
+<body data-base-href=""
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">africas_talking package</li>
+  </ol>
+  <div class="self-name">africas_talking</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li class="self-crumb">africas_talking package</li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">africas_talking</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="africas_talking/africas_talking-library.html">africas_talking</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <p>This package wraps some functionalities from Africa's Talking API
+The functionalities implemented are;</p>
+<ol>
+<li>Sms</li>
+</ol>
+<ul>
+<li>send message</li>
+<li>fetch messages</li>
+<li>generate checkout token</li>
+<li>subscribe phone number</li>
+<li>fetch subscriptions</li>
+<li>delete a subscription</li>
+</ul>
+<ol start="2">
+<li>Airtime</li>
+</ol>
+<ul>
+<li>send airtime</li>
+<li>check airtime transaction status</li>
+</ul>
+<ol start="3">
+<li>Voice cal;</li>
+</ol>
+<ul>
+<li>make a call</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<pre class="language-dart"><code class="language-dart">import 'package:africas_talking/africas_talking.dart';
+
+main() {
+  var africasTalking = AfricasTalking('YourUsername', key);
+
+  // set to false when testing 
+  africasTalking.isLive = false;
+
+  // ***Sms***
+  // initialize sms; Takes your registered short code or alphanumeric, defaults to AFRICASTKNG
+  Sms sms = africasTalking.sms('ShortCode');
+  
+  // send sms
+  sms.send(message: "Hello world", to: ['+XXXXXXXXXXXX']);
+  // fetch messages
+  sms.fetchMessages(lastReceivedId: '0');
+
+
+  // ***Airtime***
+  // initialize airtime
+  Airtime airtime = africasTalking.airtime();
+
+  // send airtime; takes a List of AirtimeRecipient
+  airtime.send([AirtimeRecipient(amount: 20, phoneNo: '+XXXXXXXXXXXX', currency: 'KES')]);
+
+
+  // ***Voice call***
+  // initialize voice call; takes  Your Africa’s Talking phone number
+  VoiceCall voiceCall = africasTalking.voiceCall('+XXXXXXXXXXXX');
+
+  // make a call; takes a list of phone numbers
+  voiceCall.call(to: ['+XXXXXXXXXXXX']);
+}
+</code></pre>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="africas_talking">
+  <span class="name"><a href="africas_talking/africas_talking-library.html">africas_talking</a></span> 
+
+</dt>
+<dd>This package wraps &amp; consumes Africa's Talking APIs <a href="africas_talking/africas_talking-library.html">[...]</a>
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    africas_talking
+      0.0.1
+  </span>
+
+  
+</footer>
+
+
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+
+</body>
+
+</html>
+
