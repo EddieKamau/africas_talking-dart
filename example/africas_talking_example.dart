@@ -14,7 +14,9 @@ void main()async {
   // send sms
   sms.send(message: "Hello world", to: ['+XXXXXXXXXXXX']);
   // fetch messages
-  sms.fetchMessages(lastReceivedId: '0');
+  messages = sms.fetchMessages(lastReceivedId: '0');
+  messagelist = jsonDecode(message.body); //returnjson body
+  
 
   // generate checkout token for subscribing messages; pass the phone number you want to create a subscription for
   sms.generateCheckoutToken(phoneNo: '+XXXXXXXXXXXX');
