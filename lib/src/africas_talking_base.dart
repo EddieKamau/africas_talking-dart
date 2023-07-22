@@ -145,9 +145,9 @@ class Sms  {
     return await africasTalking.httpPostProcess(
       africasTalking.isLive ? smsLiveUrl : smsTestUrl,
       {
-        'from': (from ?? shortCode).toString(),
         'to': to.join(','),
         'message': message,
+        if(from != null) ...{'from': from},
         if(bulkSMSMode != null) ...{'bulkSMSMode': bulkSMSMode},
         if(enqueue != null) ...{'enqueue': enqueue},
         if(keyword != null) ...{'keyword': keyword},
